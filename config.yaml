@@ -1,0 +1,82 @@
+---
+experiments:
+  metero_use: ['2m_temperature',
+               'boundary_layer_height',  # Comment out for no_BPL experiments.
+               'k_index',
+               'relative_humidity+950',
+               'surface_pressure',
+               'total_precipitation',
+               'u_component_of_wind+950',
+               'v_component_of_wind+950',]
+  save_npy: True
+  dataset_num: 1
+  model: MLP
+#  model: LSTM
+#  model: GRU
+#  model: GC_LSTM
+#  model: nodesFC_GRU
+#  model: PM25_GNN
+#  model: PM25_GNN_nosub
+
+train:
+  batch_size: 32
+  epochs: 50
+  exp_repeat: 10
+  hist_len: 1
+  pred_len: 24
+  weight_decay: 0.0005
+  early_stop: 10
+  lr: 0.0005
+
+filepath:
+  GPU-Server:
+    knowair_fp: /data/wangshuo/haze/pm25gnn/KnowAir.npy
+    results_dir: /data/wangshuo/haze/pm25gnn/results
+
+data:
+  metero_var:
+    ['100m_u_component_of_wind',
+     '100m_v_component_of_wind',
+     '2m_dewpoint_temperature',
+     '2m_temperature',
+     'boundary_layer_height',
+     'k_index',
+     'relative_humidity+950',
+     'relative_humidity+975',
+     'specific_humidity+950',
+     'surface_pressure',
+     'temperature+925',
+     'temperature+950',
+     'total_precipitation',
+     'u_component_of_wind+950',
+     'v_component_of_wind+950',
+     'vertical_velocity+950',
+     'vorticity+950']
+
+dataset:
+  data_start: [[2015, 1, 1, 0, 0], GMT]
+  data_end: [[2018, 12, 31, 21, 0], GMT]
+
+  1:
+    train_start: [[2015, 1, 1], GMT]
+    train_end: [[2016, 12, 31], GMT]
+    val_start: [[2017, 1, 1], GMT]
+    val_end: [[2017, 12, 31], GMT]
+    test_start: [[2018, 1, 1], GMT]
+    test_end: [[2018, 12, 31], GMT]
+
+  2:
+    train_start: [[2015, 11, 1], GMT]
+    train_end: [[2016, 2, 28], GMT]
+    val_start: [[2016, 11, 1], GMT]
+    val_end: [[2017, 2, 28], GMT]
+    test_start: [[2017, 11, 1], GMT]
+    test_end: [[2018, 2, 28], GMT]
+
+  3:
+    train_start: [[2016, 9, 1], GMT]
+    train_end: [[2016, 11, 30], GMT]
+    val_start: [[2016, 12, 1], GMT]
+    val_end: [[2016, 12, 31], GMT]
+    test_start: [[2017, 1, 1], GMT]
+    test_end: [[2017, 1, 31], GMT]
