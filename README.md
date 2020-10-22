@@ -4,7 +4,7 @@ PM2.5-GNN: A Domain Knowledge Enhanced Graph Neural Network For PM2.5 Forecastin
 
 ## Dataset
 
-- Download dataset **KnowAir** from [Google Drive](https://drive.google.com/open?id=1R6hS5VAgjJQ_wu8i5qoLjIxY0BG7RD1L) or [Baiduyun](https://pan.baidu.com/s/1sdPFSR8Oq3XPrXMnXFqd1w) with code `2mr6`.
+- Download dataset **KnowAir** from [Google Drive](https://drive.google.com/open?id=1R6hS5VAgjJQ_wu8i5qoLjIxY0BG7RD1L) or [Baiduyun](https://pan.baidu.com/s/1rujAU8IJB-fJiDcuDK2huQ) with code `ni44`.
 
 ## Requirements
 
