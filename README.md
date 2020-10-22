@@ -16,7 +16,9 @@ pip install -r requirements.txt
 
 open `config.yaml`, do the following setups.
 
-- set data path after your server name. Like,
+- set data path after your server name. Like mine.
+
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gjy8kojsfmj30i202g746.jpg)
 
 ```python
 filepath:
