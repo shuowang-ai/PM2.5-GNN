@@ -22,3 +22,4 @@ torch-sparse==0.4.3
 torch-spline-conv==1.1.1
 tqdm==4.38.0
 xarray==0.14.0
+bresenham==0.2.1
