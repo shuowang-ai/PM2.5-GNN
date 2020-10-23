@@ -12,6 +12,8 @@ PM2.5-GNN: A Domain Knowledge Enhanced Graph Neural Network For PM2.5 Forecastin
 pip install -r requirements.txt
 ```
 
+Note: Maybe you need to install `pytorch==1.1.0` ahead separately before installing requirements.
+
 ## Experiment Setup
 
 open `config.yaml`, do the following setups.
