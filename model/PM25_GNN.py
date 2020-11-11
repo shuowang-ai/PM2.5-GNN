@@ -3,7 +3,7 @@ from torch import nn
 from model.cells import GRUCell
 from torch.nn import Sequential, Linear, Sigmoid
 import numpy as np
-from torch_scatter import scatter_add, scatter_sub
+from torch_scatter import scatter_add#, scatter_sub  # no scatter sub in lastest PyG
 from torch.nn import functional as F
 from torch.nn import Parameter
 
@@ -56,8 +56,8 @@ class GraphGNN(nn.Module):
 
         out = self.edge_mlp(out)
         out_add = scatter_add(out, edge_target, dim=1, dim_size=x.size(1))
-        out_sub = scatter_sub(out, edge_src, dim=1, dim_size=x.size(1))
-        # out_sub = scatter_add(out.neg(), edge_src, dim=1, dim_size=x.size(1))  # For higher version of PyG.
+        # out_sub = scatter_sub(out, edge_src, dim=1, dim_size=x.size(1))
+        out_sub = scatter_add(out.neg(), edge_src, dim=1, dim_size=x.size(1))  # For higher version of PyG.
 
         out = out_add + out_sub
         out = self.node_mlp(out)

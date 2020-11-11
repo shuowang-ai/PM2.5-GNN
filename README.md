@@ -8,6 +8,12 @@ PM2.5-GNN: A Domain Knowledge Enhanced Graph Neural Network For PM2.5 Forecastin
 
 ## Requirements
 
+```
+Python 3.7.3
+PyTorch 1.7.0
+PyG: https://github.com/rusty1s/pytorch_geometric#pytorch-170
+```
+
 ```bash
 pip install -r requirements.txt
 ```

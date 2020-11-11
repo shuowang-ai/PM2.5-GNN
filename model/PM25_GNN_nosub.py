@@ -3,7 +3,7 @@ from torch import nn
 from model.cells import GRUCell
 from torch.nn import Sequential, Linear, Sigmoid
 import numpy as np
-from torch_scatter import scatter_add, scatter_sub
+from torch_scatter import scatter_add#, scatter_sub  # no scatter sub in lastest PyG
 from torch.nn import functional as F
 from torch.nn import Parameter
 
