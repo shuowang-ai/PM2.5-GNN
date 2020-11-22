@@ -74,4 +74,24 @@ python train.py
 
 ## Reference
 
-Shuo Wang, Yanran Li, Jiang Zhang, Qingye Meng, Lingwei Meng, and Fei Gao. 2020. PM2.5-GNN: A Domain Knowledge Enhanced Graph Neural Network For PM2.5 Forecasting. In 28th International Conference on Advances in Geographic Information Systems (SIGSPATIAL ’20), November 3–6, 2020, Seattle, WA, USA. ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3397536.3422208
+Paper: https://dl.acm.org/doi/10.1145/3397536.3422208
+
+```
+@inproceedings{10.1145/3397536.3422208,
+author = {Wang, Shuo and Li, Yanran and Zhang, Jiang and Meng, Qingye and Meng, Lingwei and Gao, Fei},
+title = {PM2.5-GNN: A Domain Knowledge Enhanced Graph Neural Network For PM2.5 Forecasting},
+year = {2020},
+isbn = {9781450380195},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3397536.3422208},
+doi = {10.1145/3397536.3422208},
+abstract = {When predicting PM2.5 concentrations, it is necessary to consider complex information sources since the concentrations are influenced by various factors within a long period. In this paper, we identify a set of critical domain knowledge for PM2.5 forecasting and develop a novel graph based model, PM2.5-GNN, being capable of capturing long-term dependencies. On a real-world dataset, we validate the effectiveness of the proposed model and examine its abilities of capturing both fine-grained and long-term influences in PM2.5 process. The proposed PM2.5-GNN has also been deployed online to provide free forecasting service.},
+booktitle = {Proceedings of the 28th International Conference on Advances in Geographic Information Systems},
+pages = {163–166},
+numpages = {4},
+keywords = {air quality prediction, graph neural network, spatio-temporal prediction},
+location = {Seattle, WA, USA},
+series = {SIGSPATIAL '20}
+}
+```
