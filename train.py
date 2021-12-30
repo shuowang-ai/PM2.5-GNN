@@ -116,6 +116,7 @@ def train(train_loader, model, optimizer):
     model.train()
     train_loss = 0
     for batch_idx, data in tqdm(enumerate(train_loader)):
+        optimizer.zero_grad()
         pm25, feature, time_arr = data
         pm25 = pm25.to(device)
         feature = feature.to(device)
