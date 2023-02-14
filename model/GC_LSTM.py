@@ -9,7 +9,7 @@ class GC_LSTM(nn.Module):
     def __init__(self, hist_len, pred_len, in_dim, city_num, batch_size, device, edge_index):
         super(GC_LSTM, self).__init__()
         self.edge_index = torch.LongTensor(edge_index)
-        self.edge_index = self.edge_index.view(2, 1, -1).repeat(1, batch_size, 1) + torch.arange(batch_size).view(1, -1, 1) * batch_size
+        self.edge_index = self.edge_index.view(2, 1, -1).repeat(1, batch_size, 1) + torch.arange(batch_size).view(1, -1, 1) * city_num
         self.edge_index = self.edge_index.view(2, -1)
         self.device = device
         self.hist_len = hist_len
