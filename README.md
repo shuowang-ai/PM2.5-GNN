@@ -6,6 +6,27 @@ PM2.5-GNN: A Domain Knowledge Enhanced Graph Neural Network For PM2.5 Forecastin
 
 - Download dataset **KnowAir** from [Google Drive](https://drive.google.com/open?id=1R6hS5VAgjJQ_wu8i5qoLjIxY0BG7RD1L) or [Baiduyun](https://pan.baidu.com/s/18D6Etl5Lm1E4vOLVrX0ZAw) with code `t82d`.
 
+## KnowAir-V2
+
+🚀 Dataset Update: Announcing KnowAir-V2! 🚀
+
+We are excited to announce a major upgrade to the original KnowAir (PM2.5-GNN) dataset with the official release of KnowAir-V2! This is a brand-new, higher-quality benchmark dataset for air quality forecasting.
+
+Key improvements in KnowAir-V2 include:
+- Longer Temporal Span: Data covers from 2016 to 2023.
+- Richer Variables: Includes not only PM2.5 but also O3 and more related meteorological variables.
+- Higher Data Quality: The data has undergone rigorous preprocessing and imputation, reaching an operational-level standard.
+
+For all new research and projects, we strongly recommend using KnowAir-V2. This dataset is designed to provide a powerful benchmarking platform for more advanced spatio-temporal prediction models that integrate physical-chemical knowledge, such as PCDCNet.
+
+How to Access and Cite
+Dataset Download (KnowAir-V2):
+
+- Wang, S., Cheng, Y., Meng, Q., Saukh, O., Zhang, J., Fan, J., Zhang, Y., Yuan, X., & Thiele, L. (2025). KnowAir-V2: A Benchmark Dataset for Air Quality Forecasting with PCDCNet [Data set]. Zenodo. https://doi.org/10.5281/zenodo.15614907
+
+- Related Paper (PCDCNet):
+Please refer to the paper: "PCDCNet: A Surrogate Model for Air Quality Forecasting with Physical-Chemical Dynamics and Constraints" (arXiv:2505.19842). https://www.arxiv.org/abs/2505.19842
+
 ## Requirements
 
 ```
