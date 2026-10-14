@@ -4,7 +4,7 @@ PM2.5-GNN: A Domain Knowledge Enhanced Graph Neural Network For PM2.5 Forecastin
 
 ## Dataset
 
-- Download dataset **KnowAir** from [Google Drive](https://drive.google.com/open?id=1R6hS5VAgjJQ_wu8i5qoLjIxY0BG7RD1L) or [Baiduyun](https://pan.baidu.com/s/18D6Etl5Lm1E4vOLVrX0ZAw) with code `t82d`.
+- Download the original **KnowAir** dataset from [Zenodo](https://doi.org/10.5281/zenodo.23339627) (preferred, citable archive). The [Google Drive](https://drive.google.com/open?id=1R6hS5VAgjJQ_wu8i5qoLjIxY0BG7RD1L) and [Baiduyun](https://pan.baidu.com/s/18D6Etl5Lm1E4vOLVrX0ZAw) mirrors remain available; the Baiduyun access code is `t82d`.
 
 ## KnowAir-V2
 
@@ -26,6 +26,11 @@ Dataset Download (KnowAir-V2):
 
 - Related Paper (PCDCNet):
 Please refer to the paper: "PCDCNet: A Surrogate Model for Air Quality Forecasting with Physical-Chemical Dynamics and Constraints" (arXiv:2505.19842). https://www.arxiv.org/abs/2505.19842
+
+## Related forecasting and inference models
+
+- [PCDCNet](https://github.com/shuowang-ai/PCDCNet) forecasts PM2.5 and O3 at monitored stations using recent pollutant observations and meteorological inputs, with optional emission inputs. Its regional experiments use [KnowAir-V2](https://doi.org/10.5281/zenodo.15614907); see the [paper](https://arxiv.org/abs/2505.19842).
+- For PM2.5 inference at locations **without local observations**, see [SPIN](https://github.com/shuowang-ai/air_inference_spin) and its [Atmospheric Environment paper](https://doi.org/10.1016/j.atmosenv.2026.122398). SPIN uses PM2.5 observations from other monitoring stations together with meteorological and emission inputs to estimate concentrations at unmonitored locations. Satellite aerosol optical depth (AOD) guides training but is not required at inference. The public SPIN repository provides model and loss code.
 
 ## Requirements
 
